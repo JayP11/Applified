@@ -1,0 +1,42 @@
+.ContactUsPage_main {
+  margin: 0 auto;
+  padding: 2rem 0;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-around;
+}
+.ContactUsPage_form,
+.ContactUsPage_details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 470px;
+}
+
+.ContactUsPage_details_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.ContactUsPage_phoneno,.ContactUsPage_email,.ContactUsPage_linkdin,.ContactUsPage_office {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c_form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.c-txt,
+.c-msg-txt {
+  padding: 0.4rem;
+  font-size: 16px;
+}
