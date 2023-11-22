@@ -17,7 +17,7 @@ const Strategy = () => {
             className="empathy_icon"
           />
           <h2 className="heading_inner_strategy">
-            EMPATHIZE WITH THE CUSTOMER
+            Empathize With The Customer
           </h2>
           {/* <p className="para_inner_strategy">
             We understand your needs, and we're here to make your experience
@@ -32,7 +32,7 @@ const Strategy = () => {
             alt="DEFINE PROBLEM"
             className="empathy_icon"
           />
-          <h2 className="heading_inner_strategy">DEFINE THE PROBLEM</h2>
+          <h2 className="heading_inner_strategy">Define The Problem</h2>
           {/* <p className="para_inner_strategy">
             Defining the problem is our first step. We analyze and pinpoint the
             challenge, providing clarity for effective solutions that meet your
@@ -48,7 +48,7 @@ const Strategy = () => {
             className="empathy_icon"
           />
 
-          <h2 className="heading_inner_strategy">IDEATE SOLUTIONS</h2>
+          <h2 className="heading_inner_strategy">Ideate Solutions</h2>
           {/* <p className="para_inner_strategy">
             Inspired by your unique challenges, we ideate innovative solutions.
             Our creative minds explore possibilities to design custom strategies
@@ -62,7 +62,7 @@ const Strategy = () => {
             alt="TRIAL AND TEST"
             className="empathy_icon"
           />
-          <h2 className="heading_inner_strategy">TRIAL AND TEST</h2>
+          <h2 className="heading_inner_strategy">Trial And Test</h2>
           {/* <p className="para_inner_strategy">
             We believe in trials and rigorous testing. Before implementation, we
             validate our solutions, ensuring they perform optimally and exceed

@@ -10,11 +10,10 @@ const HomeHero = () => {
         style={{
           backgroundImage: `url(${images.curv_darkgreen})`,
           backgroundSize: "cover",
-          // backgroundColor: "#164343",
-          height: "65vh",
-          // height: "85vh",
-        
-        }} >
+          // backgroundColor: "#003e29",
+          // height: "65vh",
+          height: "87vh",
+        }}>
         {/* <img
         src={images.curv}
         alt=""

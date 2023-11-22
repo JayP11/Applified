@@ -28,6 +28,13 @@ import greenchoicenow from "../assets/greenchoicenow.png";
 import bsgforsdg from "../assets/bsgforsdg.png";
 import elderaid from "../assets/elderaid.png";
 
+import tick from "../assets/tick.png";
+import ecommerce from "../assets/ecommerce.jpeg";
+import hospital from "../assets/hospital.jpeg";
+import Entertainment from "../assets/Entertainment.jpeg";
+import Distribution from "../assets/Distribution.avif";
+import Franchise from "../assets/Franchise.jpeg";
+
 export default {
   women_home,
   web_elements,
@@ -59,4 +66,11 @@ export default {
   greenchoicenow,
   bsgforsdg,
   elderaid,
+
+  tick,
+  ecommerce,
+  hospital,
+  Entertainment,
+  Distribution,
+  Franchise,
 };
