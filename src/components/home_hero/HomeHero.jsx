@@ -8,11 +8,10 @@ const HomeHero = () => {
       <div
         className="home-hero-bg"
         style={{
-          backgroundImage: `url(${images.curv_darkgreen})`,
+          // backgroundImage: `url(${images.curv_darkgreen})`,
           backgroundSize: "cover",
           // backgroundColor: "#003e29",
           // height: "65vh",
-          height: "87vh",
         }}>
         {/* <img
         src={images.curv}

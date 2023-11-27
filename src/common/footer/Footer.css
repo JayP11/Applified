@@ -59,12 +59,26 @@
   transition: all 0.5s ease-in-out;
   transform: rotate(360deg);
 }
+.socialicon_footer_twitter:hover {
+  color: #1da1f2;
+}
+.socialicon_footer_linkdin:hover {
+  color: #0e76a8;
+}
+.socialicon_footer_whatsapp:hover {
+  color: #25d366;
+}
+.socialicon_footer:hover {
+  background-color: #fff;
+}
+
+/* .1DA1F2 */
 
 @media screen and (max-width: 650px) {
   .Footer_main {
     gap: 2rem;
     padding: 1rem;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
   }
 }

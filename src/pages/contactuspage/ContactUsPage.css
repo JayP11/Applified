@@ -1,12 +1,25 @@
 .ContactUsPage_main {
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 1rem 0;
   max-width: 1140px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
+.ContactUsPage_main_heading {
+  display: flex;
+  justify-content: center;
+  background: var(--color-darkolivegreen-shade);
+  padding: 2rem;
+  margin: 2rem 0;
+  color: white;
+    margin-top: 10rem;
 
+}
+.ContactUsPage_main_heading_inner {
+  font-size: 34px;
+  text-shadow: 2px 2px #6f8b82;
+}
 .ContactUsPage_details {
   background: var(--color-lightgray);
   border-radius: 37px;
@@ -67,12 +80,18 @@ input::-webkit-inner-spin-button {
 .c-msg-txt {
   padding: 0.4rem;
   font-size: 16px;
+  border: 2px solid;
 }
 
 .ContactUsPage_map_inner {
   border-radius: 10px;
 }
 
+.react_icons_contactpg {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+}
 @media screen and (max-width: 780px) {
   .ContactUsPage_inner {
     flex-direction: column;

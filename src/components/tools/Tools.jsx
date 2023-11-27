@@ -59,10 +59,14 @@ const Tools = () => {
         </div>
         <div className="faq_services_main">
           {faqData.map((item, index) => (
-            <div key={item.id} className="faq_services_inner">
+            <div
+              key={item.id}
+              onClick={() => toggleAccordion(index)}
+              className="faq_services_inner">
               <div
                 className="faq-question"
-                onClick={() => toggleAccordion(index)}>
+                // onClick={() => toggleAccordion(index)}
+              >
                 <div className="icon_main">{item.icon}</div>
                 <div className="">
                   <h3 className="question_h3">{item.question}</h3>

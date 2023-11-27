@@ -109,6 +109,9 @@
   }
   .question_h3{
     width: 296px;
-    font-size: 16px !important;
+    font-size: 14px !important;
+  }
+  .icon_main{
+    font-size: 20px;
   }
 }

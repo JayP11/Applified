@@ -6,6 +6,12 @@
   flex-direction: column;
   gap: 2.5rem;
 }
+
+.Portfolio_main_heading_inner {
+  font-size: 34px;
+  text-shadow: 2px 2px #6f8b82;
+}
+
 .Portfolio_main_heading {
   display: flex;
   justify-content: center;
@@ -13,6 +19,7 @@
   padding: 2rem;
   margin: 2rem 0;
   color: white;
+  margin-top: 10rem;
 }
 .tges_main,
 .dronstudy_main,

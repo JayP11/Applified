@@ -3,6 +3,7 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 import { BsTwitter, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -14,16 +15,16 @@ const Footer = () => {
             <Link to="/" className="link_decor">
               <h4 className="footer_link_color">Home</h4>
             </Link>
-            <Link to="/" className="link_decor">
-              <h4 className="footer_link_color">About</h4>
+            <Link to="/Products" className="link_decor">
+              <h4 className="footer_link_color">Products</h4>
             </Link>
-            <Link to="/" className="link_decor">
-              <h4 className="footer_link_color">Services</h4>
+            <Link to="/Portfolio" className="link_decor">
+              <h4 className="footer_link_color">Portfolio</h4>
             </Link>
             <Link to="/" className="link_decor">
               <h4 className="footer_link_color">Career</h4>
             </Link>
-            <Link to="/" className="link_decor">
+            <Link to="contact" className="link_decor">
               <h4 className="footer_link_color">Contact us</h4>
             </Link>
           </div>
@@ -32,18 +33,21 @@ const Footer = () => {
           <div className="socialfooter_icons">
             <h3>SOCIAL SHARING</h3>
             <div className="socialicon_footer_main">
-              <Link to="/" className="link_decor socialicon_footer">
+              <Link
+                to="/"
+                className="link_decor socialicon_footer socialicon_footer_twitter">
                 <BsTwitter className="socialicon_footer_inner" />
               </Link>
               <Link
                 to="https://www.linkedin.com/in/kedar-dave-applified/"
-                className="link_decor socialicon_footer">
+                className="link_decor socialicon_footer socialicon_footer_linkdin">
                 <FaLinkedinIn className="socialicon_footer_inner" />
               </Link>
               <Link
                 to="http://api.whatsapp.com/send?phone=9099040407&text=Let%27s%20Get%20in%20Touch"
-                className="link_decor socialicon_footer">
-                <BsWhatsapp className="socialicon_footer_inner" />
+                className="link_decor socialicon_footer socialicon_footer_whatsapp">
+                <IoLogoWhatsapp className="socialicon_footer_inner" />
+                {/* <BsWhatsapp className="socialicon_footer_inner" /> */}
               </Link>
             </div>
           </div>
@@ -59,8 +63,8 @@ const Footer = () => {
         <div className="contact_sec_footer">
           <div className="contact_sec_footer_inner">
             <h3>PHONE</h3>
-            <a href="tel:82000700450" className="link_decor footer_link_color">
-              +91 820007 00450
+            <a href="tel:9099040407" className="link_decor footer_link_color">
+              +91 90990 40407
             </a>
           </div>
           <div className="contact_sec_footer_inner">

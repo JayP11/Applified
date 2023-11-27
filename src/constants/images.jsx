@@ -1,6 +1,7 @@
 import women_home from "../assets/women_home.png";
 import web_elements from "../assets/web_elements.png";
 import Applified_logo from "../assets/Applified_logo.png";
+import logonew from "../assets/LogoNew.png";
 import curv from "../assets/curv.png";
 import curv_olivgreen from "../assets/curv_olivgreen.png";
 import curv_darkgreen from "../assets/curv_darkgreen.png";
@@ -31,7 +32,7 @@ import elderaid from "../assets/elderaid.png";
 import tick from "../assets/tick.png";
 import ecommerce from "../assets/ecommerce.jpeg";
 import hospital from "../assets/hospital.jpeg";
-import Entertainment from "../assets/Entertainment.jpeg";
+import Entertainment from "../assets/Entertainment.webp";
 import Distribution from "../assets/Distribution.avif";
 import Franchise from "../assets/Franchise.jpeg";
 
@@ -42,6 +43,7 @@ export default {
   curv_darkgreen,
   curv_olivgreen,
   Applified_logo,
+  logonew,
 
   empathy_icon,
   probem_icon,

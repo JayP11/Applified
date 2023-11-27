@@ -1,5 +1,10 @@
 .shadow_nav {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  position: fixed;
+  background: white;
+  width: 100%;
+  top: 0;
+  z-index: 999;
 }
 .Navbar_main {
   height: 122px;
@@ -17,12 +22,12 @@
 }
 
 .logo_nav_main {
-  height: 100px;
-  width: 100px;
+  /* height: 100px; */
+  width: 200px;
 }
 .logo_nav {
   object-fit: cover;
-  height: 107%;
+  height: 100%;
   width: 100%;
 }
 
@@ -41,11 +46,12 @@
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .sidebar_main_wrapp {
+    margin-top: 2.7rem;
     width: 100%;
     padding: 3% 0 0 0;
-    margin-top: 1%;
+    /* margin-top: 1%; */
     position: fixed;
     top: 60px;
     z-index: 99;

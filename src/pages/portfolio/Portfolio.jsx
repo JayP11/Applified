@@ -6,9 +6,8 @@ import { Link } from "react-router-dom";
 const Portfolio = () => {
   return (
     <>
-      {" "}
       <div className="Portfolio_main_heading">
-        <h1>Portfolio</h1>
+        <h1 className="Portfolio_main_heading_inner">Portfolio</h1>
       </div>
       <div className="Portfolio_main">
         <div className="tges_main">
