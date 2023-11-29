@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Portfolio.css";
 import images from "../../constants/images";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="Portfolio_main_heading">
@@ -40,21 +43,25 @@ const Portfolio = () => {
                   color: "black",
                   fontWeight: "800",
                 }}>
-                https://tgesconnect.org
+                tgesconnect.org
               </Link>
             </div>
           </div>
           <div className="tges_image_main">
-            <img src={images.tges} className="tges_image" alt="tgesimage" />
+            <Link to="https://tgesconnect.org">
+              <img src={images.tges} className="tges_image" alt="tgesimage" />
+            </Link>
           </div>
         </div>
         <div className="dronstudy_main">
           <div className="dronstudy_image_main">
-            <img
-              src={images.dronstudy}
-              className="dronstudy_image"
-              alt="dronstudyimage"
-            />
+            <Link to="https://course.dronstudy.com/">
+              <img
+                src={images.dronstudy}
+                className="dronstudy_image"
+                alt="dronstudyimage"
+              />
+            </Link>
           </div>
           <div className="dronstudy_desc">
             <div>
@@ -79,7 +86,6 @@ const Portfolio = () => {
                 affordable way. They have their spread in all over India.
               </p>
             </div>
-
             <div>
               <Link
                 to="https://course.dronstudy.com/"
@@ -88,7 +94,7 @@ const Portfolio = () => {
                   color: "white",
                   fontWeight: "800",
                 }}>
-                https://course.dronstudy.com
+                course.dronstudy.com
               </Link>
             </div>
           </div>
@@ -114,31 +120,35 @@ const Portfolio = () => {
             </div>
             <div>
               <Link
-                to=" https://www.thegrandtrunkus.com"
+                to="https://www.thegrandtrunkus.com"
                 style={{
                   textDecoration: "none",
                   color: "black",
                   fontWeight: "800",
                 }}>
-                https://www.thegrandtrunkus.com
+                thegrandtrunkus.com
               </Link>
             </div>
           </div>
           <div className="grandtrunk_image_main">
-            <img
-              src={images.grandtrunk}
-              className="grandtrunk_image"
-              alt="grandtrunkimage"
-            />
+            <Link to="https://www.thegrandtrunkus.com">
+              <img
+                src={images.grandtrunk}
+                className="grandtrunk_image"
+                alt="grandtrunkimage"
+              />
+            </Link>
           </div>
         </div>
         <div className="greenchoicenow_main">
           <div className="greenchoicenow_image_main">
-            <img
-              src={images.greenchoicenow}
-              alt="greenchoicenowimage"
-              className="greenchoicenow_image"
-            />
+            <Link to="https://www.greenchoicenow.com">
+              <img
+                src={images.greenchoicenow}
+                alt="greenchoicenowimage"
+                className="greenchoicenow_image"
+              />
+            </Link>
           </div>
           <div className="greenchoicenow_desc">
             <div>
@@ -173,7 +183,7 @@ const Portfolio = () => {
                   color: "black",
                   fontWeight: "800",
                 }}>
-                https://www.greenchoicenow.com
+                www.greenchoicenow.com
               </Link>
             </div>
           </div>
@@ -208,25 +218,29 @@ const Portfolio = () => {
                   color: "white",
                   fontWeight: "800",
                 }}>
-                https://www.bsgforsdg.org
+                www.bsgforsdg.org
               </Link>
             </div>
           </div>
           <div className="bsgforsdg_image_main">
-            <img
-              src={images.bsgforsdg}
-              alt="bsgforsdgimg"
-              className="bsgforsdg_image"
-            />
+            <Link to="https://www.bsgforsdg.org/">
+              <img
+                src={images.bsgforsdg}
+                alt="bsgforsdgimg"
+                className="bsgforsdg_image"
+              />
+            </Link>
           </div>
         </div>
         <div className="elderaid_main">
           <div className="elderaid_image_main">
-            <img
-              src={images.elderaid}
-              alt="elderaidimg"
-              className="elderaid_image"
-            />
+            <Link to="https://www.elderaid.in/">
+              <img
+                src={images.elderaid}
+                alt="elderaidimg"
+                className="elderaid_image"
+              />
+            </Link>
           </div>
           <div className="elderaid_desc">
             <div>
@@ -257,7 +271,7 @@ const Portfolio = () => {
                   color: "black",
                   fontWeight: "800",
                 }}>
-                https://www.elderaid.in
+                www.elderaid.in
               </Link>
             </div>
           </div>

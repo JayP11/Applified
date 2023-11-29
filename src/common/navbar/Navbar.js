@@ -12,25 +12,25 @@ const Navbar = () => {
       <div className="shadow_nav">
         <div className="Navbar_main">
           <div className="logo_nav_main">
-            {/* <h1>Applifed.</h1> */}
+            {/* <h2>Applifed.</h2> */}
             <img src={images.logonew} alt="" className="logo_nav" />
             {/* <img src={images.Applified_logo} alt="" className="logo_nav" /> */}
           </div>
           <div className="links_nav_main">
             <Link to="/" className="link_decor">
-              <h4>Home</h4>
+              <h3>Home</h3>
             </Link>
             <Link to="/Products" className="link_decor">
-              <h4>Products</h4>
+              <h3>Products</h3>
             </Link>
             <Link to="/Portfolio" className="link_decor">
-              <h4>Portfolio</h4>
+              <h3>Portfolio</h3>
             </Link>
             {/* <Link to="/" className="link_decor">
               <h4>Career</h4>
             </Link> */}
             <Link to="/contact" className="link_decor">
-              <h4>Contact us</h4>
+              <h3>Contact us</h3>
             </Link>
           </div>
           {toggleMenu === false ? (
@@ -54,19 +54,19 @@ const Navbar = () => {
                 to="/"
                 className="link_decor"
                 onClick={() => setToggleMenu(false)}>
-                <h1>Home</h1>
+                <h2>Home</h2>
               </Link>
               <Link
                 to="/Products"
                 className="link_decor"
                 onClick={() => setToggleMenu(false)}>
-                <h4>Products</h4>
+                <h2>Products</h2>
               </Link>
               <Link
                 to="/Portfolio"
                 className="link_decor"
                 onClick={() => setToggleMenu(false)}>
-                <h4>Portfolio</h4>
+                <h2>Portfolio</h2>
               </Link>
               {/* <Link to="/" className="link_decor">
                 <h4>Career</h4>
@@ -75,7 +75,7 @@ const Navbar = () => {
                 to="/contact"
                 className="link_decor"
                 onClick={() => setToggleMenu(false)}>
-                <h4>Contact us</h4>
+                <h2>Contact us</h2>
               </Link>
             </div>
           </div>

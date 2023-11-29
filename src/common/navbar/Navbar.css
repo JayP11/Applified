@@ -46,7 +46,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   .sidebar_main_wrapp {
     margin-top: 2.7rem;
     width: 100%;
@@ -63,7 +63,7 @@
     border: 1px solid var(--color-black);
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     text-align: center;
     gap: 30px;
@@ -78,7 +78,7 @@
 
   .side_icon {
     display: block;
-    margin-right: 15px;
+    /* margin-right: 15px; */
   }
 }
 
@@ -87,4 +87,5 @@
   gap: 2rem;
   font-size: 20px;
   flex-direction: column;
+  margin-top: 2rem;
 }

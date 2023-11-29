@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Products.css";
 import images from "../../constants/images";
 import { FaAngleDoubleRight } from "react-icons/fa";
 
 const Products = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="Products_main_heading">
@@ -19,12 +22,12 @@ const Products = () => {
             />
           </div>
           <div className="Ecommerce_details">
-            <div>
+            <div className="drop-in">
               <h1 style={{ color: "var(--color-darkolivegreen-shade)" }}>
                 Ecommerce
               </h1>
             </div>
-            <div className="Products_details_points">
+            <div className="Products_details_points drop-in-2">
               <div className="pro_list_main">
                 <div className="tick_inner_main">
                   {/* <img src={images.tick} alt="tick" className="tick_inner" /> */}

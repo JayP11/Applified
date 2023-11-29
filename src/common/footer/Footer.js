@@ -21,9 +21,7 @@ const Footer = () => {
             <Link to="/Portfolio" className="link_decor">
               <h4 className="footer_link_color">Portfolio</h4>
             </Link>
-            <Link to="/" className="link_decor">
-              <h4 className="footer_link_color">Career</h4>
-            </Link>
+
             <Link to="contact" className="link_decor">
               <h4 className="footer_link_color">Contact us</h4>
             </Link>

@@ -9,7 +9,7 @@
 }
 
 .home-hero-bg {
-  background-color: #003e29;
+  /* background-color: #003e29; */
   margin-top: 7.5rem;
 }
 
@@ -100,6 +100,7 @@
   .heading_main_hero {
     max-width: 100%;
     padding-top: 2rem;
+    margin-top: 3rem;
   }
 
   .heading_main_p {
@@ -108,5 +109,25 @@
 
   .hero_btn_main {
     justify-content: center;
+  }
+}
+
+.drop-in {
+  animation: drop-in 1s ease 200ms backwards;
+}
+
+.drop-in-2 {
+  animation: drop-in 1200ms ease 500ms backwards;
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0px);
   }
 }

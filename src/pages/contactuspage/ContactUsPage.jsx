@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ContactUsPage.css";
 import { mobileValidate } from "../../utils/helpers";
 import { Link } from "react-router-dom";
@@ -15,6 +15,10 @@ const ContactUsPage = () => {
   const [email, setemail] = useState("");
   const [subject, setsubject] = useState("");
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="ContactUsPage_main_heading">
@@ -25,7 +29,7 @@ const ContactUsPage = () => {
       <div className="ContactUsPage_main">
         <div className="ContactUsPage_inner">
           <div className="ContactUsPage_form">
-            <div>
+            <div className="">
               <h1>CONTACT US</h1>
             </div>
             <div>
@@ -76,10 +80,10 @@ const ContactUsPage = () => {
             </div>
           </div>
           <div className="ContactUsPage_details">
-            <div className="ContactUsPage_details_inner">
+            <div className="ContactUsPage_details_inner drop-in">
               <h1>REACHING TO US IS EASY...</h1>
             </div>
-            <div className="ContactUsPage_details_inner">
+            <div className="ContactUsPage_details_inner drop-in-2">
               <div className="ContactUsPage_phoneno">
                 <h4>PHONE</h4>
                 <div className="react_icons_contactpg">

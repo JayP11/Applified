@@ -46,6 +46,8 @@
 }
 .socialicon_footer {
   font-size: 20px;
+  height: 40px;
+  width: 40px;
   border: 2px solid;
   /* padding: 7px 7px 6px 9px; */
   /* padding: 0.4rem; */
@@ -53,6 +55,9 @@
   border-radius: 50%;
   background: var(--color-darkolivegreen-shade);
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .socialicon_footer:hover .socialicon_footer_inner {

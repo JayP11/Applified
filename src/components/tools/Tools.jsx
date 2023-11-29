@@ -11,13 +11,14 @@ import {
 const Tools = () => {
   const [faqData, setFaqData] = useState([
     {
-      // id: 1,
+      // id: 0,
       icon: <FaLaptopCode />,
       question: "  Web APP Development",
       answer:
         "To build accessible, responsive and secure web applications with latest technology. With bulletproof code and stunning interfaces, we provide both front-end and back-end development.",
     },
     {
+      // id: 1,
       icon: <TbDeviceMobileCode />,
       question: "  Mobile APP Development",
       answer:
@@ -36,14 +37,11 @@ const Tools = () => {
         "We sculpt your thoughts and turn it into reality. To speed up the digital transformation, we leverage our expertise with our cross functional experts and help you unlock innovation.",
     },
   ]);
-  const [expanded, setExpanded] = useState(null);
+
+  const [expanded, setExpanded] = useState(0);
 
   const toggleAccordion = (index) => {
-    if (expanded === index) {
-      setExpanded(null);
-    } else {
-      setExpanded(index);
-    }
+    setExpanded((prevExpanded) => (prevExpanded === index ? null : index));
   };
 
   return (
@@ -61,56 +59,32 @@ const Tools = () => {
           {faqData.map((item, index) => (
             <div
               key={item.id}
-              onClick={() => toggleAccordion(index)}
-              className="faq_services_inner">
-              <div
-                className="faq-question"
-                // onClick={() => toggleAccordion(index)}
-              >
-                <div className="icon_main">{item.icon}</div>
-                <div className="">
+              className="faq_services_inner"
+              onClick={() => {
+                toggleAccordion(index);
+              }}>
+              <div className="faq-question">
+                <div className="icon_main" style={{ marginBottom: 10 }}>
+                  {item.icon}
+                </div>
+                <div className="" style={{ marginBottom: 10 }}>
                   <h3 className="question_h3">{item.question}</h3>
                 </div>
               </div>
-              {expanded === index && (
-                <>
-                  <p className="faq-answer">{item.answer}</p>
-                </>
-              )}
+              <div
+                className={`faq-answer ${
+                  expanded === index
+                    ? "visible"
+                    : "hidden faq-answer_margin_not"
+                }`}>
+                {item.answer}
+              </div>
             </div>
           ))}
         </div>
-        {/* <div>
-        <div className="tools_btns_main_home">
-          <div>
-            <button className="tools_btn_home">
-              <FaLaptopCode />
-              Web APP Development
-            </button>
-            <button className="tools_btn_home">
-              <TbDeviceMobileCode />
-              Mobile APP Development
-            </button>
-            </div>
-          <div>
-            <button className="tools_btn_home">
-              <TbSettingsCode />
-              Turn-Key Software
-            </button>
-            <button className="tools_btn_home">
-              <TbAppsFilled />
-              Custom APPS Development
-            </button>
-          </div>
-        </div>
-      </div> */}
       </div>
     </div>
   );
 };
 
 export default Tools;
-
-// HiMiniCodeBracket;
-// PiBracketsCurly;
-// TbFileSettings;
